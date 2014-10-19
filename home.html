@@ -1,0 +1,75 @@
+<head>
+  <title>Real Estate Agent Book Keeper</title>
+  <meta name="viewport" content="device-width, initial-scale=1" />
+</head>
+
+<template name="layout">
+  {{> yield region="header"}}
+  {{> yield region="footer"}}
+  <div class="content">
+    <div class="content-padded">
+      {{> yield}}
+    </div>
+  </div>
+</template>
+
+<template name="notFound">
+  <h1>Page Not Found!</h1>
+</template>
+
+<template name="loading">
+  <h1>Loading...</h1>
+</template>
+
+<template name="home">
+  <h1>Home</h1>
+  <ul class="table-view">
+    <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+    <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+    <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+      <li class="table-view-cell">
+      <a href="{{pathFor 'preference'}}">Preference</a>
+    </li>
+  
+  </ul>
+
+</template>
+
+<template name="preference">
+  <h1>Preference</h1>
+  <input type="text" id="test_input">
+  <a href="{{pathFor 'home'}}">Home</a>
+</template>

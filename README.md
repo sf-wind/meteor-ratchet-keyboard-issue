@@ -1,0 +1,5 @@
+This is a test case to illustrate that when a meteor cordova application is created with ratchet, if the soft keyboard is shown due to input field, and user clicks a link to go to another page when the soft keyboard is on, the lower portion of the new page is blank. 
+
+It is tested on android 4.2.x. The issue only happens in cordova application, not in mobile browser. In mobile browser, the soft keyboard is first slided down before the page transition. However, in cordova, the page transition happens at the same time as the keyboard being slided down. 
+
+If the application doesn't use ratchet, the cordova application would still transition to the new page and then slide down the keyboard. However, the content of the new page is still shown after it is slided down. If ratchet is used, the content of the page is not shown. 
